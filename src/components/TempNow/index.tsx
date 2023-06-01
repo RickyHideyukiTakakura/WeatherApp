@@ -12,7 +12,7 @@ export function TempNow(props: ITempNow) {
       <S.Number>
         <strong>{props.temp}</strong>
         <div>
-          {props.max}°<span>{props.min}°</span>
+          {props.max}°<span> {props.min}°</span>
         </div>
       </S.Number>
       <div>°C</div>

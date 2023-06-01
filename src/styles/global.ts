@@ -32,3 +32,13 @@ export const Container = styled.main`
     grid-template-rows: 24.4rem 21.2rem;
   }
 `;
+
+export const Loading = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+`;
