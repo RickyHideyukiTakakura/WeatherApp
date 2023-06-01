@@ -1,5 +1,5 @@
-import * as S from './styles';
-import sunChartImg from '../../assets/sun-chart.svg';
+import sunChartImg from "../../assets/sun-chart.svg";
+import * as S from "./styles";
 
 interface ISunChart {
   hourNow: string;

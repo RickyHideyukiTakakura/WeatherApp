@@ -1,11 +1,12 @@
-import { SunChart } from '../SunChart';
-import * as S from './styles';
+import { SunChart } from "../SunChart";
+import * as S from "./styles";
 
 interface ISunTime {
   image: string;
   title: string;
-  sunrise: string;
-  sunset: string;
+  hourNow: string;
+  sunrise: number;
+  sunset: number;
 }
 
 export function SunTime(props: ISunTime) {
@@ -16,7 +17,7 @@ export function SunTime(props: ISunTime) {
         {props.title}
       </h2>
 
-      <SunChart hourNow="14:36" />
+      <SunChart hourNow={props.hourNow} />
 
       <S.Time>
         <time>{props.sunrise}</time>

@@ -1,16 +1,30 @@
-import { Location } from '../Location';
-import { TempNow } from '../TempNow';
-import { Statistics } from '../Statistics';
+import locationIcon from "../../assets/pin.svg";
+import { Location } from "../Location";
+import { Statistics } from "../Statistics";
+import { TempNow } from "../TempNow";
+import * as S from "./styles";
 
-import * as S from './styles';
-import locationIcon from '../../assets/pin.svg';
+interface CardTempProps {
+  locationName: string;
+  locationRegion: string;
+  tempNow: number;
+  maxTemperature: number;
+  minTemperature: number;
+}
 
-export function CardTemp() {
+export function CardTemp(props: CardTempProps) {
   return (
     <S.CardTemp>
-      <Location image={locationIcon} location="Rio do Sul, SC" />
+      <Location
+        image={locationIcon}
+        location={`${props.locationName} ${props.locationRegion}`}
+      />
 
-      <TempNow temp={18} max={22} min={16} />
+      <TempNow
+        temp={props.tempNow}
+        max={props.maxTemperature}
+        min={props.minTemperature}
+      />
 
       <Statistics />
     </S.CardTemp>

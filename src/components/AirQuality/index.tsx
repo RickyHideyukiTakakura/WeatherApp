@@ -1,5 +1,5 @@
-import { ListInfoAirQuality } from '../ListInfoAirQuality';
-import * as S from './styles';
+import { ListInfoAirQuality } from "../ListInfoAirQuality";
+import * as S from "./styles";
 
 interface IAirQuality {
   image: string;
