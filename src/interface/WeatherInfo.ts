@@ -12,7 +12,6 @@ export interface WeatherInfo {
     humidity: number;
     cloud: number;
     air_quality: {
-      us_epa_index: number;
       pm2_5: number;
       pm10: number;
       so2: number;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SunChartWrapper = styled.div`
   margin-top: 4rem;
@@ -6,7 +6,7 @@ export const SunChartWrapper = styled.div`
 `;
 
 export const SunChart = styled.div`
-  --pos-x: 75;
+  --pos-x: 0;
   margin: auto;
   width: 21.6rem;
   height: 21.6rem;
@@ -14,7 +14,7 @@ export const SunChart = styled.div`
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 1.2rem;
     height: 1.2rem;
     position: absolute;
@@ -48,7 +48,7 @@ export const Chart = styled.div`
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     width: 21rem;
     height: 21rem;
 

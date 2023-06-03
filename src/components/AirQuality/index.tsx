@@ -6,6 +6,12 @@ interface IAirQuality {
   title: string;
   quality: string;
   qualityNumber: number;
+  pm2_5: number;
+  pm10: number;
+  so2: number;
+  no2: number;
+  o3: number;
+  co: number;
 }
 
 export function AirQuality(props: IAirQuality) {
@@ -21,7 +27,14 @@ export function AirQuality(props: IAirQuality) {
         <p>{props.qualityNumber}</p>
       </div>
 
-      <ListInfoAirQuality />
+      <ListInfoAirQuality
+        pm2_5={props.pm2_5}
+        pm10={props.pm10}
+        so2={props.so2}
+        no2={props.no2}
+        o3={props.o3}
+        co={props.co}
+      />
     </S.AirQuality>
   );
 }
