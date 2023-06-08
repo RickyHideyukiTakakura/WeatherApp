@@ -17,7 +17,7 @@ export function SunChart(props: ISunChart) {
     : ((currentHour - 6) / 11) * 100;
 
   if (!isPM) {
-    if (currentHour <= 6 && currentMinute < 59) {
+    if ((currentHour <= 6 && currentMinute < 59) || currentHour === 12) {
       posX = 0;
     }
   }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { WeatherInfo } from "../interface/WeatherInfo";
-import { getWeather } from "../services/weatherApi";
+import { getWeather } from "../services/weatherService";
 
 function useWeatherApi() {
   const [weatherInfo, setWeatherInfo] = useState<WeatherInfo>();

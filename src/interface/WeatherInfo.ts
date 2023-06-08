@@ -30,6 +30,37 @@ export interface WeatherInfo {
           mintemp_c: number;
           condition: {
             text: string;
+            icon: string;
+          };
+        };
+        astro: {
+          sunrise: number;
+          sunset: number;
+        };
+      },
+      {
+        date: string;
+        day: {
+          maxtemp_c: number;
+          mintemp_c: number;
+          condition: {
+            text: string;
+            icon: string;
+          };
+        };
+        astro: {
+          sunrise: number;
+          sunset: number;
+        };
+      },
+      {
+        date: string;
+        day: {
+          maxtemp_c: number;
+          mintemp_c: number;
+          condition: {
+            text: string;
+            icon: string;
           };
         };
         astro: {

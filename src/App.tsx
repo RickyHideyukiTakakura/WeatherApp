@@ -11,10 +11,8 @@ import * as S from "./styles/global";
 
 function App() {
   const { weatherInfo } = useWeatherApi();
-  const aSecondInMiliseconds = 1000;
   const [currentTime, setCurrentTime] = useState<string>("00:00");
-
-  // console.log(weatherInfo);
+  const aSecondInMiliseconds = 1000;
 
   setInterval(() => {
     setCurrentTime(
@@ -25,6 +23,8 @@ function App() {
       })
     );
   }, aSecondInMiliseconds);
+
+  console.log(weatherInfo);
 
   if (!weatherInfo) {
     return <S.Loading>Loading...</S.Loading>;
